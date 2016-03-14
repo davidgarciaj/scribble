@@ -60,8 +60,7 @@ public class DrawDemo
             pen.move(100);
             pen.turn(120);
         }
-    }
-    
+    }    
 
     /**
      * Draw a green triangle on the screen.
@@ -73,6 +72,18 @@ public class DrawDemo
         for(int i = 0; i < n; i++){
             pen.move(100);
             pen.turn(360/n);
+        }
+    }    
+
+    /**
+     * Draw a green triangle on the screen.
+     */
+    public void drawSpiral()
+    {
+        Pen pen = new Pen(250, 200, myCanvas);
+        for(int i = 0; i < 50; i++){
+            pen.move((i+1)*5);
+            pen.turn(90);
         }
     }
 
