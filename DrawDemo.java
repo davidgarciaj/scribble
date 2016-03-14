@@ -81,8 +81,8 @@ public class DrawDemo
     public void drawSpiral()
     {
         Pen pen = new Pen(250, 200, myCanvas);
-        for(int i = 0; i < 50; i++){
-            pen.move((i+1)*5);
+        for(int i = 0; i < 76; i++){
+            pen.move((i)*5);
             pen.turn(90);
         }
     }
