@@ -50,7 +50,7 @@ public class DrawDemo
     }
 
     /**
-     * Draw a square on the screen.
+     * Draw a green triangle on the screen.
      */
     public void drawTriangle(int x, int y)
     {
@@ -59,6 +59,19 @@ public class DrawDemo
         for(int i = 0; i < 3; i++){
             pen.move(100);
             pen.turn(120);
+        }
+    }
+
+    /**
+     * Draw a green pentagon on the screen.
+     */
+    public void drawPentagon(int x, int y)
+    {
+        Pen pen = new Pen(x, y, myCanvas);
+        pen.setColor(Color.GREEN);
+        for(int i = 0; i < 5; i++){
+            pen.move(100);
+            pen.turn(72);
         }
     }
 
