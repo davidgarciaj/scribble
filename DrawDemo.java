@@ -61,6 +61,20 @@ public class DrawDemo
             pen.turn(120);
         }
     }
+    
+
+    /**
+     * Draw a green triangle on the screen.
+     */
+    public void drawPolygon(int n)
+    {
+        Pen pen = new Pen(250, 200, myCanvas);
+        pen.setColor(Color.GREEN);
+        for(int i = 0; i < n; i++){
+            pen.move(100);
+            pen.turn(360/n);
+        }
+    }
 
     /**
      * Draw a green pentagon on the screen.
